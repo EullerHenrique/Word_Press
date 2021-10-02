@@ -1,21 +1,74 @@
-<div class="container">
-    <div class="row mt-4 mb-4">
-        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start mb-2">
-            <a href="/">
-                <img width="45" height="45" src="/img/word_press.png">
+<header>
+            
+    <!-- navbar = Criação da estrutura de uma navbar-->
+    <!-- navbar-expand-sm = A barra de nabegação se expande a partir do tamanho sm-->
+    <!-- navbar-light = A navbar possui um background claro, portanto, a cor dos textos é escura-->
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+    
+        <!-- container-fluid = width: 100% -->
+
+        <div class="container-fluid">
+
+
+            <!-- navbar-brand = Espaço reservado para o nome ou o logo da empresa--> 
+
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/word_press.png" alt="img_word_press" width="45" height="45" class="d-inline-block align-top">
+            
             </a>
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start mb-2">
-          
-			<input class="form-control rounded-pill shadow-none"  placeholder="">
+        
+            <!-- navbar-toogler = Botão de recolhimento que aparece em resoluções abaixo do tamanho sm -->
 
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end mb-2">
+            <button class="navbar-toggler shadow-none" type="button" data-toggle="collapse" data-target="#navbar">
+               
+                <!-- navbar-toogler-icon = Ícone do plugin -->
+                <!-- data-toogle = Indica o efeito da ação => collapse (desabar)--> 
+                <!-- data-target = Alvo da ação-->
+                
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            
+            <!-- collapse navbar-collapse = Agrupa e oculta o conteúdo da barra de navegação de acordo com o ponto de interrupção-->
 
-            <a href="/ask">
-                <button class="btn btn-primary rounded-pill">Click</button>
-            </a>
-        </div>
+            <div class="collapse navbar-collapse" id="navbar">
 
-    </div>
-</div>
+                <!-- navbar-nav = Criação da estrutura de uma navbar-nav-->
+
+                <div class="navbar-nav w-100">
+                
+
+                    <!-- nav-link = Criação da estrutura de um link de uma navbar-nav --> 
+                       
+                    <a href="/admin/categories"
+                    class="nav-link"
+                    >Categorias
+                    </a>
+                    <a href="albuns.html"
+                    class="nav-link"
+                    >Albuns
+                    </a>
+                    <a href="to_do_s.html"
+                    class="nav-link"
+                    >To DOs
+                    </a>
+                    
+                </div>
+
+                <div class="navbar-nav">
+
+                    <a  href="index.html"
+                    class="nav-link active"
+                    >Home
+                    </a>
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+    </nav>
+
+</header>
